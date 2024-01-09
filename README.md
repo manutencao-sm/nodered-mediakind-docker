@@ -98,7 +98,7 @@ cd ~/dockers
 ```
 
 ```
-git clone git@github.com:welbercastilho/node-red-docker.git
+git clone git@github.com:welbercastilho/nodered-mediakind-docker.git
 ```
 
 4. Alterar .env
