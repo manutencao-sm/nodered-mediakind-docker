@@ -104,6 +104,9 @@ git clone git@github.com:welbercastilho/nodered-mediakind-docker.git
 4. Alterar .env
 Alterar o arquivo .env colocando as informações referente a conexão com o database no mongodb.
 
+5. Grupos e dono das pastas e arquivos
+Tenha certeza que nenhum das pastas e arquivos tenham como proprietário usuário root ou grupo de usuários root. Caso esteja(m) utilize o comando chown para alterar a permissão para o usuário que esteja logado.
+
 5. Criar e executar os containers criados
 > Todos comandos relacionados ao docker-compose deverão ser executados com sudo e deverão ser executados no diretório raiz do projeto onde se encontra o arquivo docker-compose.yml 
 ```
@@ -112,9 +115,8 @@ sudo docker-compose up -d
 
 
 ### Softwares MongoDB
-Baixar o seguintes softwares para acessar  e executar consultas no mongoDB
-* MongoDB Compass
-* NoSQLBooster for MongoDB
+Baixar o seguinte software para acessar  e executar consultas no mongoDB
+* MongoDB Compass (GUI)
 
 
 ### Criar database e collections
