@@ -112,15 +112,5 @@ Tenha certeza que nenhum das pastas e arquivos tenham como proprietário usuári
 sudo docker-compose up -d
 ``` 
 
-
-### Softwares MongoDB
-Baixar o seguinte software para acessar  e executar consultas no mongoDB
-* MongoDB Compass (GUI)
-
-
-### Criar database e collections
-Através do MongoDB Compass criar o database mediakind e criar as collections alarmes e leituras. 
-
-
 ### Importar fluxo no Node-Red
 No Node-RED importar o fluxo de nós da aplicação.
