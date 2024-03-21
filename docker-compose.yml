@@ -14,22 +14,7 @@ services:
     volumes:
       - ./data:/data
     networks:
-      - node-network
-
-  mongodb:
-    image: mongo:latest
-    container_name: iot-mongodb
-    restart: unless-stopped    
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: ${DB_USERNAME}
-      MONGO_INITDB_ROOT_PASSWORD: ${DB_PASSWORD}
-      MONGO_INITDB_DATABASE: ${DB_DATABASE}
-    ports:
-      - 27017:27017
-    volumes:
-      - ./mongodb/data:/data/db
-    networks:
-      - node-network
+      - node-network 
 
 networks:
   node-network:

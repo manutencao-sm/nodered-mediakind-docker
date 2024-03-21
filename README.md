@@ -2,11 +2,10 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/AzeemIdrisi/PhoneSploit-Pro?logo=github)
 
 ### Objetivo
-Os passos abaixo são utilizados para a criação dos containers que irão rodar a aplicação do node-red em conjunto com o mongodb. 
+Os passos abaixo são utilizados para a criação do container que irá rodar a aplicação do node-red para a monitoração do mediakind. 
 
-Depois de executar o passo a passo a baixo serão criados os seguintes containers:
+Depois de executar o passo a passo a baixo será criado o seguinte container:
 * NodeRed
-* MongoDB
 
 ### Configurando o ambiente linux e a versão docker
 1. Na sua VPS instalar a última o Ubuntu Server versão 22.04.3 LTS e já marcar as opções para instalar com SO o Docker, Docker-Compose, Git e SSH.
@@ -105,7 +104,7 @@ git clone git@github.com:welbercastilho/nodered-mediakind-docker.git
 Alterar o arquivo .env colocando as informações referente a conexão com o database no mongodb.
 
 5. Grupos e dono das pastas e arquivos
-Tenha certeza que nenhum das pastas e arquivos tenham como proprietário usuário root ou grupo de usuários root. Caso esteja(m) utilize o comando chown para alterar a permissão para o usuário que esteja logado.
+Tenha certeza que nenhum das pastas e arquivos tenham como proprietário usuário root ou grupo de usuários root. Caso esteja(m) utilize o comando chown e chgrp para alterar a permissão para o usuário que esteja logado.
 
 5. Criar e executar os containers criados
 > Todos comandos relacionados ao docker-compose deverão ser executados com sudo e deverão ser executados no diretório raiz do projeto onde se encontra o arquivo docker-compose.yml 
